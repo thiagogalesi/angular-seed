@@ -1,0 +1,7 @@
+Contacts:
+<ul class="contact-list list-group">
+<li class="list-group-item" ng-repeat="c in contacts">
+  <span class="glyphicon glyphicon-earphone" ng-click="dial($event, c)" aria-hidden="true"></span>
+  {{ c.name.first }} {{ c.name.last }}, {{ c.name.title }}
+</li>
+</ul>
