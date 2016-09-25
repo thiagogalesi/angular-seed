@@ -1,0 +1,8 @@
+<div>
+<img ng-src='{{profile.picture.thumbnail}}'/>
+<h1 class="">{{profile.name.first | capitalize}} {{profile.name.last | capitalize}}</h1>
+<div ng-repeat='c in contacts' >
+  <span class="glyphicon glyphicon-{{c.style}}"</span>
+  {{c.value}}
+</div>
+</div>

@@ -12,10 +12,7 @@ angular.module('ContactsApp.services', [])
 
     contacts_api.getContactDetail = function(id) {
       console.log('contacts_api.getContactDetail');
-      return $http({
-        method: 'JSONP',
-        url: SERVICE_ADDRESS+'/users' + id
-      });
+      return $http.get(SERVICE_ADDRESS+'/users/' + id);
     }
 
     contacts_api.createContact = function(data) {
