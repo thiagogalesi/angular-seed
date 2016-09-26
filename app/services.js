@@ -1,4 +1,4 @@
-SERVICE_ADDRESS = 'http://192.168.1.100:8000';
+SERVICE_ADDRESS = 'http://localhost:8000';
 
 angular.module('ContactsApp.services', [])
   .factory('contactsREST', function($http) {
